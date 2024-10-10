@@ -290,6 +290,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="api working" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpendingAnalysisAPI$flaskProjectAPI.coverage" NAME="flaskProjectAPI Coverage Results" MODIFIED="1728583411159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flaskProjectAPI$flaskProjectAPI.coverage" NAME="flaskProjectAPI Coverage Results" MODIFIED="1728573791883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PersonalFinanceManagerAPI$flaskProjectAPI.coverage" NAME="flaskProjectAPI Coverage Results" MODIFIED="1728579524101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
