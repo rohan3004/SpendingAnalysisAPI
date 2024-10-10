@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Analysis API Documentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spending Analysis API Documentation</h1>
+            <p>Analyze your spending patterns and receive recommendations for better financial management.</p>
+        </header>
+
+        <div class="column" id="overview">
+            <h2>Overview</h2>
+            <p>This API allows users to submit transaction data in JSON format and provides insights along with recommendations.</p>
+        </div>
+
+        <div class="column" id="endpoint">
+            <h2>Endpoint</h2>
+            <p><strong>POST</strong> <code>/api/analyze-spending</code></p>
+        </div>
+
+        <div class="column" id="request">
+            <h2>Request Format</h2>
+            <h3>Input JSON Structure</h3>
+            <pre><code>
+{
+    "transactions": [
+        {
+            "date": "YYYY-MM-DD",
+            "category_name": "string",
+            "amount": number,
+            "transaction_type": "string"
+        },
+        ...
+    ]
+}
+            </code></pre>
+
+            <h4>Key-Value Pairs:</h4>
+            <ul>
+                <li><strong>transactions</strong>: Array of transaction objects.</li>
+                <li><strong>date</strong>: Transaction date in YYYY-MM-DD format.</li>
+                <li><strong>category_name</strong>: Name of the category.</li>
+                <li><strong>amount</strong>: Monetary amount for the transaction.</li>
+                <li><strong>transaction_type</strong>: Type of transaction ("expense" or "income").</li>
+            </ul>
+
+            <h3>Example Input JSON</h3>
+            <pre><code>
+{
+    "transactions": [
+        {
+            "date": "2024-01-15",
+            "category_name": "Groceries",
+            "amount": 150,
+            "transaction_type": "expense"
+        },
+        {
+            "date": "2024-01-20",
+            "category_name": "Entertainment",
+            "amount": 80,
+            "transaction_type": "expense"
+        }
+    ]
+}
+            </code></pre>
+        </div>
+
+        <div class="column" id="response">
+            <h2>Response Format</h2>
+            <h3>Output JSON Structure</h3>
+            <pre><code>
+{
+    "spending_analysis": [
+        {
+            "date": "YYYY-MM-DD",
+            "category_name": "string",
+            "amount": number,
+            "predicted_amount": number
+        },
+        ...
+    ],
+    "recommendations": [
+        "string"
+    ]
+}
+            </code></pre>
+
+            <h4>Key-Value Pairs:</h4>
+            <ul>
+                <li><strong>spending_analysis</strong>: Array of analyzed transactions.</li>
+                <li><strong>date</strong>: Date of the transaction.</li>
+                <li><strong>category_name</strong>: Name of the transaction category.</li>
+                <li><strong>amount</strong>: Actual transaction amount.</li>
+                <li><strong>predicted_amount</strong>: Predicted transaction amount based on analysis.</li>
+                <li><strong>recommendations</strong>: Array of recommendations based on analysis.</li>
+            </ul>
+
+            <h3>Example Output JSON</h3>
+            <pre><code>
+{
+    "spending_analysis": [
+        {
+            "date": "2024-01-15",
+            "category_name": "Groceries",
+            "amount": 150,
+            "predicted_amount": 145.0
+        },
+        {
+            "date": "2024-01-20",
+            "category_name": "Entertainment",
+            "amount": 80,
+            "predicted_amount": 75.0
+        }
+    ],
+    "recommendations": [
+        "You are overspending on Groceries. Consider reducing your expenses in this category.",
+        "You're likely to overspend this month if you continue this spending pattern."
+    ]
+}
+            </code></pre>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Rohan Chakravarty. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
