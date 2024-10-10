@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="398ae83f-6ce2-4f0a-8164-e59ebc87d7bf" name="Changes" comment="api working">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PersonalFinanceManagerAPI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -269,7 +265,7 @@
       <workItem from="1728579666889" duration="48000" />
       <workItem from="1728579904733" duration="289000" />
       <workItem from="1728580746854" duration="13000" />
-      <workItem from="1728583358970" duration="302000" />
+      <workItem from="1728583358970" duration="647000" />
     </task>
     <task id="LOCAL-00001" summary="api working">
       <option name="closed" value="true" />

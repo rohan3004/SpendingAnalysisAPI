@@ -1,2 +1,21 @@
-.venv
-.idea
+# Byte-compiled files
+*.py[cod]
+__pycache__/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Virtual environments
+venv/
+*.venv/
+
+# Database or secret files
+*.sqlite3
+secrets.json
+
+# IDE specific files
+.vscode/
+.idea/
