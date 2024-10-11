@@ -2,11 +2,15 @@
 *.py[cod]
 __pycache__/
 
+models/__pycache__/
+models/*.py[cod]
+
 # Environment variables
 .env
 
 # Log files
 *.log
+*.tmp
 
 # Virtual environments
 venv/
@@ -19,3 +23,5 @@ secrets.json
 # IDE specific files
 .vscode/
 .idea/
+
+.dockerignore
