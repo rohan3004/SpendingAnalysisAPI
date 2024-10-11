@@ -25,3 +25,4 @@ secrets.json
 .idea/
 
 .dockerignore
+Dockerfile
