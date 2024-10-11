@@ -1,8 +1,10 @@
 from flask import Flask, render_template, jsonify, redirect, request
 from models.model import SpendingAnalyzer
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 spending_analyzer = SpendingAnalyzer()
 
@@ -30,4 +32,4 @@ def analyze_spending():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=5001)
+    app.run(host='0.0.0.0', port=5001)
